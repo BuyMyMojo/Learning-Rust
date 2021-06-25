@@ -18,6 +18,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\HelloWorld\Cargo.toml
+    - uses: actions/upload-artifact@v2
+    with:
+      name: hello_world_debug
+      path: D:\a\Learning-Rust\Learning-Rust\HelloWorld\target\debug
+
   
   build_image_process:
 
@@ -27,3 +32,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build
       run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\image_process\Cargo.toml
+    - uses: actions/upload-artifact@v2
+    with:
+      name: image_process_debug
+      path: D:\a\Learning-Rust\Learning-Rust\image_process\target\debug
