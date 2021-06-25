@@ -17,4 +17,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build HelloWorld
-      run: cargo build --verbose --manifest-path .\HelloWorld\Cargo.toml
+      run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
