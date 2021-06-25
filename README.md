@@ -1,4 +1,6 @@
 # Learning-Rust
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/50a21bd4225e4e28bec2c4b3dfead7dd)](https://www.codacy.com/gh/BuyMyMojo/Learning-Rust/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuyMyMojo/Learning-Rust&amp;utm_campaign=Badge_Grade)
+
 A handful of programs from me learning to write rust
 
 ## Passing builds
