@@ -12,14 +12,14 @@ env:
 jobs:
   build_hello_world:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build Debug
       run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\HelloWorld\Cargo.toml
 
-    - name: Upload
+    - name: Upload Debug
       uses: actions/upload-artifact@v2
       with:
         name: hello_world_debug
@@ -28,14 +28,14 @@ jobs:
   
   build_image_process:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build
+    - name: Build Debug
       run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\image_process\Cargo.toml
    
-    - name: Upload
+    - name: Upload Debug
       uses: actions/upload-artifact@v2
       with:
         name: image_process_debug
