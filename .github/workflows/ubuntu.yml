@@ -25,13 +25,13 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: hello_world_debug
-        path:/home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/target/debug
+        path: /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/target/debug
 
     - name: Upload Release
       uses: actions/upload-artifact@v2
       with:
         name: hello_world_release
-        path:/home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/target/release
+        path: /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/target/release
 
   
   build_image_process:
