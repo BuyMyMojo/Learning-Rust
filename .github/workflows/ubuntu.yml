@@ -17,9 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build Debug
-      run: cargo build --verbose --manifest-path/home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
+      run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
     - name: Build Release
-      run: cargo build --verbose --manifest-path/home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
+      run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
 
     - name: Upload Debug
       uses: actions/upload-artifact@v2
