@@ -9,4 +9,5 @@ These apply to all seperate programs:
 [![Mac](https://github.com/BuyMyMojo/Learning-Rust/actions/workflows/mac.yml/badge.svg)](https://github.com/BuyMyMojo/Learning-Rust/actions/workflows/mac.yml)
 
 ## programs:
-1. hello_cool - a hello world script with CLI args
+1. hello_cool - a hello world script with CLI args.
+2. image_process - a squick test on image processing, nothing fancy. main goal is to average the colour of an image.
