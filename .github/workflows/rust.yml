@@ -10,11 +10,20 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
+  build_hello_world:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: Build HelloWorld
       run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
+  
+  build_\image_process:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build HelloWorld
+      run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/image_process/Cargo.toml
