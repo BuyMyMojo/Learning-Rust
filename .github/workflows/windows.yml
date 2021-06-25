@@ -1,0 +1,42 @@
+name: Windows
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build_hello_world:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\HelloWorld\Cargo.toml
+
+    - name: Upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: hello_world_debug
+        path: D:\a\Learning-Rust\Learning-Rust\HelloWorld\target\debug
+
+  
+  build_image_process:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: cargo build --verbose --manifest-path D:\a\Learning-Rust\Learning-Rust\image_process\Cargo.toml
+   
+    - name: Upload
+      uses: actions/upload-artifact@v2
+      with:
+        name: image_process_debug
+        path: D:\a\Learning-Rust\Learning-Rust\image_process\target\debug
