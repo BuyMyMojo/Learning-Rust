@@ -19,7 +19,7 @@ jobs:
     - name: Build HelloWorld
       run: cargo build --verbose --manifest-path /home/runner/work/Learning-Rust/Learning-Rust/HelloWorld/Cargo.toml
   
-  build_\image_process:
+  build_image_process:
 
     runs-on: windows-latest
 
